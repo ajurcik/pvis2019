@@ -153,10 +153,34 @@ TODO
   \item We visualize energetic profiles
 \end{itemize}
 
+\begin{figure}[htb]
+  \centering
+  \includegraphics[width=\columnwidth]{trajectories}
+  \caption{TODO replace, caption}
+  \label{fig:trajectories}
+\end{figure}
+
 From the chemistry point of view, the binding energy of a ligand-substrate complex is an essential measure when evaluating the complex.
 Therefore, we decided to strongly focus on conveying the binding energy when visualizing the trajectories dataset.
 Naturally, this can be achieved by sampling the binding energy along a ligand trajectory and plotting the obtained data to a 2D chart.
-In this manner, we obtain the energetic profile of the trajectory (see Figure ?) 
+In this manner, we obtain an abstraction of the trajectory in terms of the ligand binding energy profile (see Figure~\ref{fig:trajectory}).
+Further, the energy profiles of the trajectories can be visualized within one 2D plot using superimposition.
+
+\begin{figure}[htb]
+  \centering
+  \includegraphics[width=0.5\columnwidth]{trajectory}\\
+  \vspace{1em}
+  \includegraphics[width=0.8\columnwidth]{trajectory-energy}
+  \caption{TODO figure quality, caption}
+  \label{fig:trajectory}
+\end{figure}
+
+However, the superimposed visualization of energetic profiles does not scale well and becomes uninformative when visualizing hundreds (and more) trajectories (see Figure ?).
+Particularly, there arise two issues for the users of such visualization. First, the main energetic trends become overshadowed, and second it is not possible to navigate to individual trajectories.
+In order to overcome these issues, we propose a visualization system which employs well established visualization concepts in an interactive manner such that a ligand trajectories dataset can be explored based on the user needs.
+Namely, we reduce the amount of energetic profiles visualized in a chart by binning the data by neighborhood and presenting it using small multiples approach.
+Regarding the binning, we aim for as general as possible usage and therefore we let the user to control the data neighborhood measure.
+We describe the approach in detail in Section 4.?.
 
 \section{Visual Analysis of Trajectories}
 
@@ -194,7 +218,12 @@ TODO
   \item LinBwt vs. LinB32 (W177 closes main tunnel)
 \end{itemize}
 
-\section{Future Work}
+\section{Discussion (+ Future Work)}
+
+TODO
+\begin{itemize}
+  \item can be used also for CaverDock
+\end{itemize}
 
 \section{Conclusion}
 
