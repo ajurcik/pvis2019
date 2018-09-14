@@ -208,9 +208,9 @@ Further, the energy profiles of the trajectories can be visualized within one 2D
 However, the superimposed visualization of energetic profiles does not scale well and becomes uninformative when visualizing hundreds (and more) trajectories (see Figure ?).
 Particularly, there arise two issues for the users of such visualization. First, the main energetic trends become overshadowed, and second it is not possible to navigate to individual trajectories.
 In order to overcome these issues, we propose a visualization system which employs well established visualization concepts in an interactive manner such that a ligand trajectories dataset can be explored based on the user needs.
-Namely, we reduce the amount of energetic profiles visualized in a chart by binning the data by neighborhood and presenting it using small multiples approach.
-Regarding the binning, we aim for as general as possible usage and therefore we let the user to control the data neighborhood measure.
-We describe the approach in detail in Section 4.?.
+Namely, we reduce the amount of energetic profiles visualized in a chart by binning the data and presenting it using small multiples~\cite{tufte1990envisioning} approach.
+We bin the trajectories according to their location within a paremetric space which we define based on 1D variables that describe the trajectories (see Section~\ref{sec:multiples}).
+We aim for as general as possible usage and therefore we let the user to control the variables that define the parametric space.
 
 \section{Visual Analysis of Trajectories}
 
@@ -220,6 +220,7 @@ TODO
 \end{itemize}
 
 \subsection{Small Multiples (Dataset Slicing)}
+\label{sec:multiples}
 
 \paragraph{•} Properties -- In order to be able to slice the data, we first define an abstract representation of a ligand trajectory.
 We decided to represent the trajectory using a set of 1D variables that we call trajectory properties.
@@ -253,7 +254,7 @@ TODO
 
 TODO
 \begin{itemize}
-  \item can be used also for CaverDock
+  \item can be used also for CaverDock, MoMA-LigPath (Vina run needed)
 \end{itemize}
 
 \section{Conclusion}
