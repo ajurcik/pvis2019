@@ -139,13 +139,43 @@
 \maketitle
 
 %% \section{Introduction} %for journal use above \firstsection{..} instead
-TODO
+\begin{itemize}
+  \item Motivation
+  \item Ligand binding (Method + Trajectory data)
+  \item Contribution
+\end{itemize}
 
 \section{Related Work}
 
-TODO
+\begin{itemize}
+  \item Trajectories visualization
+  \item Differences -- ligand MD trajectory, waters
+  \item Missing?
+\end{itemize}
 
 \section{Overview}
+
+TODO
+
+\subsection{Ligand Binding Trajectories}
+
+TODO Jak moc se budeme rozepisovat? ENDTODO
+When designing the proposed visualization system, we used ligand trajectories data that was computed using our own approach to the ligand binding simulation.
+Our simulation method is inspired by robotics, and it exploits a motion planning algorithm~\cite{lavalle2006planning} in order to navigate the ligand through the void space of a molecule.
+Specifically, we implemented a modification of the Rapidly-exploring random tree (RRT)~\cite{lavalle1998rapidly} algorithm.
+We modified the original algorithm such that it does not sample the void space uniformly.
+Instead, we first compute the Voronoi diagram which represents the void space whithin a molecule.
+In order to do this, we represent the molecule using van der Waals spheres of its atoms and we compute the aditively weighted Voronoi diagram of atom spheres.
+Then, we employ the Voronoi diagram during the sample generation phase of the RRT algorithm such that we bias the sample position towards the Voronoi vertices [VCBM2018? or else?].
+Our modification is based on the assumption that it is more probable to find a ligand transport path near the largest voids within a molecule.
+This assumption is also utilized by the state-of-the-art molecular tunnel detection algorithms~\cite{yaffe2008molaxis, chovancova2012caver, sehnal2013mole}.
+Although we implemented our own ligand binding simulation algorithm, the proposed visualization system is not restricted to it.
+On the contrary, we designed the visualization with other ligand binding simulation tools in mind (see Section~\ref{sec:discussion}).
+
+TODO Autodock Vina?
+
+TODO describe visualization input data
+TODO describe direct 3D visualization?
 
 TODO
 \begin{itemize}
@@ -219,6 +249,7 @@ TODO
 \end{itemize}
 
 \section{Discussion (+ Future Work)}
+\label{sec:discussion}
 
 TODO
 \begin{itemize}
