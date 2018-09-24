@@ -38,7 +38,7 @@
 \fi%
 
 %% it is recomended to use ``\autoref{sec:bla}'' instead of ``Fig.~\ref{sec:bla}''
-\graphicspath{{figures/}{pictures/}{images/}{./}} % where to search for the images
+\graphicspath{{figures/}{pictures/}{images/}{figures/study/}{./}} % where to search for the images
 
 \usepackage{microtype}                 % use micro-typography (slightly more compact, better to read)
 \PassOptionsToPackage{warn}{textcomp}  % to address font issues with \textrightarrow
@@ -261,6 +261,62 @@ TODO
 \begin{itemize}
   \item LinBwt vs. LinB32 (W177 closes main tunnel)
 \end{itemize}
+
+Ve Fig 3 je videt, jak v LinBwt ligand prochazi skoro vzdycky.
+Naopak ve Fig 4 je videt, ze v LinB32 ligand projde malokdy.
+To odpovida laboratornim datum o snizene aktivite po mutaci (W177).
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=\columnwidth]{cs01-linbwt-all}
+  \caption{TODO}
+\end{figure}
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=\columnwidth]{cs01-linb32-all}
+  \caption{TODO}
+\end{figure}
+
+Po prozkoumani horni skupiny u Fig 4 je videt, ze se ligandy zastavily pri pruchodu okolo mutovane W177.
+Narust energie je videt na Fig 6.
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=\columnwidth]{cs01-linb32-sel-failed-3d}
+  \caption{TODO}
+\end{figure}
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=\columnwidth]{cs01-linb32-sel-failed}
+  \caption{TODO}
+\end{figure}
+
+Kdyz se podivame na trajektorie, ktere byly uspesne na LinBwt a LinB32, tak to vypada takto. Fig 7 vs. Fig 8.
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=\columnwidth]{cs01-linb32-sel-success}
+  \caption{TODO}
+\end{figure}
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=\columnwidth]{cs01-linbwt-sel-02}
+  \caption{TODO}
+\end{figure}
+
+Pri pohledu ve 3D to na LinB32 vypada takto (Fig 9).
+Mutace snizila pruchodnost tunelu p1.
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=\columnwidth]{cs01-linb32-sel-success-3d}
+  \caption{TODO}
+\end{figure}
+
+Dalsi use case by mel ukazat, ze nekdy, kdyz ligand projde na LinB32, konformace molekuly se zmenila.
 
 \section{Discussion (+ Future Work)}
 \label{sec:discussion}
