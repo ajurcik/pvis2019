@@ -113,24 +113,33 @@
 
 %% Abstract section.
 \abstract{
-Exploration of protein reactions with other molecules plays a crucial role in biochemical research, including protein engineering and drug design.
-In many cases, a small molecule (ligand) reacts with the protein at a deeply buried active site. 
-As the ligand has to get to this site from the outer environment, it is crucial to study trajectories of ligand motion.
-There are several in-silico methods to calculate potential trajectories.
-When these methods are applied in connection with molecular dynamics simulation, usually large ensembles of trajectories are produced.
-These trajectories have to be explored by biochemists who are trying to assess their relevance and gain insight into the protein function.
-During this process, many parameters of the trajectories have to be taken into account.
-This makes the exploration very demanding as the biochemists have to analyze the multidimensional data about trajectories.
-Without proper visual support, this process is very complicated and time demanding.
-In this paper, we introduce a novel tool for the interactive visual exploration and analysis of ligand trajectories and their various properties.
-The tool has been designed in tight collaboration with domain experts in order to address their needs as much as possible.
-It is composed of several linked 2D and 3D views, enabling the interactive exploration and filtering of trajectories.
-%The tool consists of a set of 2D views and the 3D view.
-Small multiples are used for communicating the properties of the trajectories.
-Through a variety of interaction techniques, the system enables users to create and store selections that can be compared and evaluated later.
-In both 2D and 3D views, users can either observer the individual trajectories or choose to aggregate the information into a functional boxplot or a density visualization.
-%It utilizes the concept of a scatterplot matrix for communicating different properties of the trajectories.
+In many cases, protein reactions with other small molecules (ligands) occur at a deeply buried active site. 
+When studying these types of reactions it is crucial for biochemists to examine trajectories of ligand motion.
+These trajectories are currently predicted with in-silico methods that usually produce large ensembles of possible trajectories. 
+In this paper, we propose a novel approach to visual exploration and analysis of these large datasets allowing domain experts to assess the relevance of individual trajectories based on their properties.
+The proposed solution is composed of multiple linked 2D and 3D views, enabling the interactive exploration and filtering of trajectories in an informed way.
+In the workflow we describe we focus on practical aspects of the interactive visual analysis specific to the ligand trajectories data.
+We adopted the well-proven approach of small multiples which allows us to break down the large dataset into smaller chunks that are easier to operate.
+Here we describe how the drill down technique can be used to create and store selections of trajectories with desired properties which allows us to compare multiple datasets.
+In both 2D and 3D views, biochemists can either observer the individual trajectories or choose to aggregate the information into a functional boxplot or a density visualization.
+The tool was developed in tight collaboration with domain experts in order to address their needs as much as possible.
 The usefulness of the tool is demonstrated in two case studies, conducted by the collaborating protein engineers.
+%Exploration of protein reactions with other molecules plays a crucial role in biochemical research, including protein engineering and drug design.
+%In many cases, a small molecule (ligand) reacts with the protein at a deeply buried active site. 
+%As the ligand has to get to this site from the outer environment, it is crucial to study trajectories of ligand motion.
+%There are several in-silico methods to calculate potential trajectories.
+%When these methods are applied in connection with molecular dynamics simulation, usually large ensembles of trajectories are produced.
+%These trajectories have to be explored by biochemists who are trying to assess their relevance and gain insight into the protein function.
+%During this process, many parameters of the trajectories have to be taken into account.
+%This makes the exploration very demanding as the biochemists have to analyze the multidimensional data about trajectories.
+%Without proper visual support, this process is very complicated and time demanding.
+%In this paper, we introduce a novel tool for the interactive visual exploration and analysis of ligand trajectories and their various properties.
+%The tool has been designed in tight collaboration with domain experts in order to address their needs as much as possible.
+%It is composed of several linked 2D and 3D views, enabling the interactive exploration and filtering of trajectories.
+%Small multiples are used for communicating the properties of the trajectories.
+%Through a variety of interaction techniques, the system enables users to create and store selections that can be compared and evaluated later.
+%In both 2D and 3D views, users can either observer the individual trajectories or choose to aggregate the information into a functional boxplot or a density visualization.
+%The usefulness of the tool is demonstrated in two case studies, conducted by the collaborating protein engineers.
 } % end of abstract
 
 %% ACM Computing Classification System (CCS). 
